@@ -3,31 +3,6 @@
 This project implements a program that finds and marks the largest possible square on a rectangular map, avoiding obstacles.
 It’s a classic algorithmic challenge widely used in coding schools (like 42) to practice memory allocation, file parsing, and dynamic programming.
 
-📘 Description
-
-The program reads a map from a text file, where each character represents a cell:
-  9 -> numbers of lines
-  . -> Empty cell (can be part of a square)
-  o -> Obstacle
-  x -> char to fill max squere
-The first line defines map metadata in the following format:
-  <number_of_lines> <empty_char> <obstacle_char> <full_char>
-
-
-Example:
-9 . o x
-...........................
-....o......................
-............o..............
-...........................
-....o......................
-...............o...........
-...........................
-......o..............o.....
-..o.......o................
-
-After processing, the program replaces the largest square of empty cells with the full_char (in this case, x).
-
 ⚙️ Compilation
 A Makefile is provided.
 Run: make
@@ -43,15 +18,6 @@ Run the program with a map file:
   ./bsq map.txt
   cat map.txt | ./bsq
   ./bsq < map.txt
-
-🧱 Project Structure
-.
-├── Makefile
-├── main.c
-├── bsq.c
-├── bsq.h
-├── map.txt        # generated automatically by Makefile
-└── build/         # object files (created by make)
 
 🧠 Algorithm Overview
 The algorithm uses dynamic programming:
