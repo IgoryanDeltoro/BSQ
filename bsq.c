@@ -147,7 +147,7 @@ int parse_map(FILE *stream, t_bsq *bsq)
     }
     bsq->map.height = rows;
     bsq->map.width = prev_len;
-
+    return 0;
 }
 
 int get_min(int top, int diag, int left){
