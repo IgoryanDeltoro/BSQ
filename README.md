@@ -7,7 +7,9 @@ It’s a classic algorithmic challenge widely used in coding schools (like 42) t
 
 A Makefile is provided.
 
-Run: make
+Run: 
+  
+    make
 
 This will:
 
@@ -22,18 +24,18 @@ This will:
 ▶️ Usage
 Run the program with a map file:
 
-  ./bsq map.txt
+    ./bsq map.txt
   
-  cat map.txt | ./bsq
+    cat map.txt | ./bsq
   
-  ./bsq < map.txt
+    ./bsq < map.txt
 
 🧠 Algorithm Overview
 The algorithm uses dynamic programming:
   1. Read and store the map into a 2D array.
   2. Create an auxiliary 2D array (dp) where each cell stores the size of the largest square ending at that position.
   3. Transition formula:
-  4. 
+
     dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1
   5. Track the cell with the maximum dp value → bottom-right corner of the largest square.
   6. Replace corresponding map cells with full_char.
