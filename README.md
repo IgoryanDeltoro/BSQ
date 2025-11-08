@@ -8,6 +8,7 @@ A Makefile is provided.
 Run: make
 
 This will:
+
   . Create the build directory
   . Compile all sources
   . Automatically generate map.txt for testing
@@ -15,8 +16,11 @@ This will:
 
 ▶️ Usage
 Run the program with a map file:
+
   ./bsq map.txt
+  
   cat map.txt | ./bsq
+  
   ./bsq < map.txt
 
 🧠 Algorithm Overview
